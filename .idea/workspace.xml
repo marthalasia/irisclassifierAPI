@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b4ee3d5d-6602-4ab8-9f29-4c691dd2ebc4" name="Default" comment="" />
+    <list default="true" id="b4ee3d5d-6602-4ab8-9f29-4c691dd2ebc4" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/irisclassifier/src/models/predict_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/irisclassifier/src/models/predict_model.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,49 +17,20 @@
       <file leaf-file-name="irisAPI.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/irisAPI.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
+            <state relative-caret-position="-54">
               <caret line="2" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="run.py" pinned="false" current-in-tab="false">
-        <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/nameko/cli/run.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="798">
-              <caret line="44" selection-start-line="44" selection-end-line="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="predict_model.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="predict_model.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/irisclassifier/src/models/predict_model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="266">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/irisclassifier/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor />
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor />
-              <second_editor />
             </state>
           </provider>
         </entry>
@@ -80,8 +54,8 @@
         <option value="$PROJECT_DIR$/irisclassifierapi/services/iris.py" />
         <option value="$PROJECT_DIR$/irisclassifierapi/src/models/predict_model.py" />
         <option value="$PROJECT_DIR$/irisAPI.py" />
-        <option value="$PROJECT_DIR$/irisclassifier/src/models/predict_model.py" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/irisclassifier/src/models/predict_model.py" />
       </list>
     </option>
   </component>
@@ -102,11 +76,6 @@
             <path>
               <item name="irisclassifierAPI" type="b2602c69:ProjectViewProjectNode" />
               <item name="irisclassifierAPI" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="irisclassifierAPI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="irisclassifierAPI" type="462c0819:PsiDirectoryNode" />
-              <item name="irisclassifier" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -235,13 +204,6 @@
     <entry file="file://$PROJECT_DIR$/irisclassifierapi/setup.py" />
     <entry file="file://$PROJECT_DIR$/irisclassifierapi/src/models/predict_model.py" />
     <entry file="file://$PROJECT_DIR$/irisclassifierapi/src/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/irisAPI.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/nameko/cli/run.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="798">
@@ -249,15 +211,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/irisclassifier/src/models/predict_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/irisclassifier/notebooks/Iris Model.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/irisclassifier/src/models/train_model.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/irisclassifier/README.md">
       <provider editor-type-id="text-editor" />
@@ -278,6 +240,23 @@
         <state split_layout="SPLIT">
           <first_editor />
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/irisAPI.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-54">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/irisclassifier/src/models/predict_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

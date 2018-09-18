@@ -11,5 +11,4 @@ class IrisClassifier:
 
     def predict(self, data):
         data = numpy.array(data)
-
         return self.model.predict(data)
