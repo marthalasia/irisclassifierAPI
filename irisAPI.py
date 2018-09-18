@@ -1,7 +1,6 @@
 import json
 from nameko.web.handlers import http
-import pickle
-from irisclassifier.irisclassifierapi.src import *
+from irisclassifier.src import *
 
 
 class IrisClassifierService(object):

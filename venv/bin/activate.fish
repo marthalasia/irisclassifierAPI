@@ -29,7 +29,7 @@ end
 # unset irrelevant variables
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/Users/marthalasia/Python/irisclassifier/irisclassifierapi/venv"
+set -gx VIRTUAL_ENV "/Users/marthalasia/Python/irisclassifierAPI/venv"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH
