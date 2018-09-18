@@ -2,24 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4ee3d5d-6602-4ab8-9f29-4c691dd2ebc4" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/irisclassifier.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/irisclassifier.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iris.py" beforeDir="false" afterPath="$PROJECT_DIR$/irisAPI.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/irisclassifier/src/models/predict_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/irisclassifier/src/models/predict_model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/irisclassifier/venv/bin/activate" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/irisclassifier/venv/bin/activate.csh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/irisclassifier/venv/bin/activate.fish" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/irisclassifier/venv/bin/python" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/irisclassifier/venv/bin/python3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/irisclassifier/venv/pyvenv.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/irisclassifier/venv1/bin/activate" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/irisclassifier/venv1/bin/activate.csh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/irisclassifier/venv1/bin/activate.fish" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/irisclassifier/venv1/bin/python" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/irisclassifier/venv1/bin/python3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/irisclassifier/venv1/pyvenv.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -48,7 +31,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="predict_model.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="predict_model.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/irisclassifier/src/models/predict_model.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="152">
@@ -56,6 +39,20 @@
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/irisclassifier/README.md">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -80,6 +77,7 @@
         <option value="$PROJECT_DIR$/irisclassifierapi/src/models/predict_model.py" />
         <option value="$PROJECT_DIR$/irisAPI.py" />
         <option value="$PROJECT_DIR$/irisclassifier/src/models/predict_model.py" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -165,7 +163,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24947146" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32969698" />
@@ -215,6 +212,16 @@
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/irisclassifier/README.md">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
         </state>
       </provider>
     </entry>
