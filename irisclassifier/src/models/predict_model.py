@@ -6,8 +6,8 @@ from pathlib import Path
 
 class IrisClassifier:
 
-    def __init__(self, file_name):
-        self.path = Path(os.getcwd(), "irisclassifier/models/" + file_name)
+    def __init__(self, model_name):
+        self.path = Path(os.getcwd(), "irisclassifier/models/" + model_name)
 
     def predict(self, data):
         data = numpy.array(data)
