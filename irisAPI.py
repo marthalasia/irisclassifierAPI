@@ -31,6 +31,6 @@ class IrisClassifierService(object):
         except Exception as e:
             return json.dumps({
                 'status': 'failed',
-                'message': 'Some error occured',
+                'message': 'Some error occurred',
                 'error': e
             })
