@@ -1,14 +1,26 @@
 import numpy
 import pickle
-import os.path
+import os
+from pathlib import Path
 
 
 class IrisClassifier:
 
-    def __init__(self):
-        self.path = os.path.join(os.getcwd(), 'irisclassifier/models/iris_classifier.pickle')
-        self.model = pickle.load(open(self.path, 'rb'))
+    def __init__(self, file_name):
+        self.path = Path(os.getcwd(), "irisclassifier/models/" + file_name)
 
     def predict(self, data):
         data = numpy.array(data)
-        return self.model.predict(data)
+        model = self.load_model()
+        prediction = []
+        if model is not None:
+            prediction = self.load_model().predict(data)
+        return prediction
+
+    def load_model(self):
+        model = None
+        if self.path.exists():
+            with open(self.path, 'rb') as file:
+                model = pickle.load(file)
+        return model
+

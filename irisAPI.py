@@ -8,7 +8,8 @@ class IrisClassifierService(object):
     name = 'iris_classifier_service'
 
     def __init__(self):
-        self.classifier = models.predict_model.IrisClassifier()
+        self.pickle = "iris.pickle"
+        self.classifier = models.predict_model.IrisClassifier(self.pickle)
 
     @http('POST', '/classify')
     def classify(self, request):
