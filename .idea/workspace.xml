@@ -2,70 +2,479 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4ee3d5d-6602-4ab8-9f29-4c691dd2ebc4" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/irisAPI.py" beforeDir="false" afterPath="$PROJECT_DIR$/irisAPI.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/irisclassifier/src/models/train_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/irisclassifier/src/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/irisclassifier/src/visualization/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/irisclassifier/src/visualization/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/irisclassifier/src/visualization/visualize.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nginx/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nginx/nginx.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run_docker.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/irisclassifier.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/irisclassifier.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/irisAPI.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/irisAPI.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/irisFlask.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/irisFlask.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/irisclassifier/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/api/irisclassifier/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/irisclassifier/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/api/irisclassifier/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/irisclassifier/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/api/irisclassifier/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/irisclassifier/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/api/irisclassifier/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/irisclassifier/docs/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/api/irisclassifier/docs/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/irisclassifier/docs/commands.rst" beforeDir="false" afterPath="$PROJECT_DIR$/api/irisclassifier/docs/commands.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/irisclassifier/docs/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/irisclassifier/docs/conf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/irisclassifier/docs/getting-started.rst" beforeDir="false" afterPath="$PROJECT_DIR$/api/irisclassifier/docs/getting-started.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/irisclassifier/docs/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/api/irisclassifier/docs/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/irisclassifier/docs/make.bat" beforeDir="false" afterPath="$PROJECT_DIR$/api/irisclassifier/docs/make.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/irisclassifier/models/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/api/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/irisclassifier/models/iris.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/api/irisclassifier/models/iris.pickle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/irisclassifier/notebooks/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/api/irisclassifier/models/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/irisclassifier/notebooks/Iris Model.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/api/irisclassifier/notebooks/Iris Model.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/irisclassifier/references/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/api/irisclassifier/notebooks/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/irisclassifier/reports/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/api/irisclassifier/references/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/irisclassifier/reports/figures/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/api/irisclassifier/reports/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/irisclassifier/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/api/irisclassifier/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/irisclassifier/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/irisclassifier/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/irisclassifier/src/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/irisclassifier/src/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/irisclassifier/src/data/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/api/irisclassifier/reports/figures/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/irisclassifier/src/data/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/irisclassifier/src/data/make_dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/irisclassifier/src/data/make_dataset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/irisclassifier/src/features/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/api/irisclassifier/src/data/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/irisclassifier/src/features/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/irisclassifier/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/irisclassifier/src/features/build_features.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/irisclassifier/src/data/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/irisclassifier/src/models/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/api/irisclassifier/src/features/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/irisclassifier/src/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/irisclassifier/src/models/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/irisclassifier/src/models/predict_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/irisclassifier/src/models/predict_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/irisclassifier/src/models/train_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/irisclassifier/src/features/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/irisclassifier/src/tests/test_predict_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/irisclassifier/src/tests/test_predict_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/irisclassifier/src/visualization/.gitkeep" beforeDir="false" afterPath="$PROJECT_DIR$/api/irisclassifier/src/features/build_features.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/irisclassifier/src/visualization/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/irisclassifier/docs/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/irisclassifier/src/visualization/visualize.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/irisclassifier/src/models/.gitkeep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/irisclassifier/test_environment.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/irisclassifier/test_environment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/irisclassifier/tox.ini" beforeDir="false" afterPath="$PROJECT_DIR$/api/irisclassifier/tox.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/bin/activate" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/bin/activate.csh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/bin/activate.fish" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/bin/easy_install" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/bin/easy_install-3.7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/bin/pip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/bin/pip3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/bin/pip3.7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/bin/python" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/bin/python3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/easy-install.pth" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/EGG-INFO/PKG-INFO" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/EGG-INFO/SOURCES.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/EGG-INFO/dependency_links.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/EGG-INFO/entry_points.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/EGG-INFO/not-zip-safe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/EGG-INFO/requires.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/EGG-INFO/top_level.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/__main__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/basecommand.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/baseparser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/build_env.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/cache.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/cmdoptions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/commands/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/commands/check.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/commands/completion.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/commands/configuration.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/commands/download.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/commands/freeze.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/commands/hash.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/commands/help.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/commands/install.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/commands/list.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/commands/search.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/commands/show.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/commands/uninstall.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/commands/wheel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/compat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/configuration.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/download.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/exceptions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/index.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/locations.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/models/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/models/index.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/operations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/operations/check.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/operations/freeze.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/operations/prepare.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/pep425tags.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/req/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/req/req_file.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/req/req_install.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/req/req_set.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/req/req_uninstall.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/resolve.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/status_codes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/utils/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/utils/appdirs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/utils/deprecation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/utils/encoding.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/utils/filesystem.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/utils/glibc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/utils/hashes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/utils/logging.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/utils/misc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/utils/outdated.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/utils/packaging.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/utils/setuptools_build.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/utils/temp_dir.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/utils/typing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/utils/ui.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/vcs/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/vcs/bazaar.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/vcs/git.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/vcs/mercurial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/vcs/subversion.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/wheel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/appdirs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/cachecontrol/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/cachecontrol/_cmd.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/cachecontrol/adapter.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/cachecontrol/cache.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/cachecontrol/caches/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/cachecontrol/caches/file_cache.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/cachecontrol/caches/redis_cache.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/cachecontrol/compat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/cachecontrol/controller.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/cachecontrol/filewrapper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/cachecontrol/heuristics.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/cachecontrol/serialize.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/cachecontrol/wrapper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/certifi/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/certifi/__main__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/certifi/cacert.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/certifi/core.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/big5freq.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/big5prober.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/chardistribution.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/charsetgroupprober.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/charsetprober.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/cli/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/cli/chardetect.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/codingstatemachine.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/compat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/cp949prober.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/enums.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/escprober.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/escsm.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/eucjpprober.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/euckrfreq.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/euckrprober.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/euctwfreq.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/euctwprober.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/gb2312freq.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/gb2312prober.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/hebrewprober.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/jisfreq.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/jpcntx.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/langbulgarianmodel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/langcyrillicmodel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/langgreekmodel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/langhebrewmodel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/langhungarianmodel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/langthaimodel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/langturkishmodel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/latin1prober.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/mbcharsetprober.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/mbcsgroupprober.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/mbcssm.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/sbcharsetprober.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/sbcsgroupprober.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/sjisprober.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/universaldetector.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/utf8prober.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/chardet/version.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/colorama/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/colorama/ansi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/colorama/ansitowin32.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/colorama/initialise.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/colorama/win32.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/colorama/winterm.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/distlib/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/distlib/_backport/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/distlib/_backport/misc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/distlib/_backport/shutil.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/distlib/_backport/sysconfig.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/distlib/_backport/sysconfig.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/distlib/_backport/tarfile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/distlib/compat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/distlib/database.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/distlib/index.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/distlib/locators.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/distlib/manifest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/distlib/markers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/distlib/metadata.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/distlib/resources.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/distlib/scripts.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/distlib/t32.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/distlib/t64.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/distlib/util.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/distlib/version.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/distlib/w32.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/distlib/w64.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/distlib/wheel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/distro.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/_ihatexml.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/_inputstream.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/_tokenizer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/_trie/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/_trie/_base.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/_trie/datrie.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/_trie/py.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/_utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/constants.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/filters/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/filters/alphabeticalattributes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/filters/base.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/filters/inject_meta_charset.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/filters/lint.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/filters/optionaltags.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/filters/sanitizer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/filters/whitespace.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/html5parser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/serializer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/treeadapters/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/treeadapters/genshi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/treeadapters/sax.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/treebuilders/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/treebuilders/base.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/treebuilders/dom.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/treebuilders/etree.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/treebuilders/etree_lxml.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/treewalkers/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/treewalkers/base.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/treewalkers/dom.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/treewalkers/etree.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/treewalkers/etree_lxml.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/html5lib/treewalkers/genshi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/idna/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/idna/codec.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/idna/compat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/idna/core.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/idna/idnadata.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/idna/intranges.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/idna/package_data.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/idna/uts46data.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/ipaddress.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/lockfile/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/lockfile/linklockfile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/lockfile/mkdirlockfile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/lockfile/pidlockfile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/lockfile/sqlitelockfile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/lockfile/symlinklockfile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/msgpack/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/msgpack/_version.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/msgpack/exceptions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/msgpack/fallback.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/packaging/__about__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/packaging/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/packaging/_compat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/packaging/_structures.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/packaging/markers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/packaging/requirements.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/packaging/specifiers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/packaging/utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/packaging/version.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/pkg_resources/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/pkg_resources/py31compat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/progress/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/progress/bar.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/progress/counter.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/progress/helpers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/progress/spinner.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/pyparsing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/pytoml/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/pytoml/core.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/pytoml/parser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/pytoml/writer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/requests/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/requests/__version__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/requests/_internal_utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/requests/adapters.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/requests/api.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/requests/auth.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/requests/certs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/requests/compat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/requests/cookies.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/requests/exceptions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/requests/help.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/requests/hooks.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/requests/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/requests/packages.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/requests/sessions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/requests/status_codes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/requests/structures.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/requests/utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/retrying.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/six.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/_collections.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/connection.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/connectionpool.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/contrib/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/contrib/_securetransport/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/contrib/_securetransport/bindings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/contrib/_securetransport/low_level.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/contrib/appengine.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/contrib/ntlmpool.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/contrib/pyopenssl.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/contrib/securetransport.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/contrib/socks.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/exceptions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/fields.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/filepost.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/packages/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/packages/backports/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/packages/backports/makefile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/packages/ordered_dict.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/packages/six.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/packages/ssl_match_hostname/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/packages/ssl_match_hostname/_implementation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/poolmanager.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/request.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/response.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/util/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/util/connection.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/util/request.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/util/response.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/util/retry.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/util/selectors.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/util/ssl_.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/util/timeout.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/util/url.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/urllib3/util/wait.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/webencodings/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/webencodings/labels.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/webencodings/mklabels.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/webencodings/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/webencodings/x_user_defined.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/setuptools-39.1.0-py3.7.egg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/lib/python3.7/site-packages/setuptools.pth" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/MasterClass/pyvenv.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/activate" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/activate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/activate.csh" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/activate.csh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/activate.fish" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/activate.fish" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/python" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/python" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/python3" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/python3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/pyvenv.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/venv/pyvenv.cfg" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1873246357">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="7" />
+          <entry key="project.open.time.10" value="3" />
+          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="8" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="Dockerfile" value="1" />
+          <entry key="py" value="11" />
+          <entry key="txt" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="Python" value="11" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="Dockerfile" value="339" />
+          <entry key="conf" value="271" />
+          <entry key="py" value="21" />
+          <entry key="txt" value="8" />
+          <entry key="yml" value="311" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Dockerfile" value="339" />
+          <entry key="PLAIN_TEXT" value="279" />
+          <entry key="Python" value="21" />
+          <entry key="YAML" value="311" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="irisAPI.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/irisAPI.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/irisclassifier/requirements.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="627">
-              <caret line="33" column="44" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="361">
+              <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="irisFlask.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/irisFlask.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/nginx/nginx.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-              <folding>
-                <element signature="e#0#33#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="152">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="predict_model.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/irisclassifier/src/models/predict_model.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nginx/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
-              <folding>
-                <element signature="e#0#12#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="57">
+              <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_predict_model.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/irisclassifier/src/tests/test_predict_model.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="26" column="44" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
+            <state relative-caret-position="190">
+              <caret line="10" column="58" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/irisclassifier/src/tests/test_predict_model.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="41" column="32" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/irisclassifier/requirements.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -94,16 +503,25 @@
         <option value="$PROJECT_DIR$/irisclassifier/test_environment.py" />
         <option value="$PROJECT_DIR$/irisclassifier/src/models/predict_model.py" />
         <option value="$PROJECT_DIR$/irisclassifier/src/tests/test_predict_model.py" />
-        <option value="$PROJECT_DIR$/irisclassifier/requirements.txt" />
         <option value="$PROJECT_DIR$/irisFlask.py" />
         <option value="$PROJECT_DIR$/irisAPI.py" />
+        <option value="$PROJECT_DIR$/irisclassifier/requirements.txt" />
+        <option value="$PROJECT_DIR$/api/irisFlask.py" />
+        <option value="$PROJECT_DIR$/run_docker.sh" />
+        <option value="$PROJECT_DIR$/api/irisclassifier/src/models/__init__.py" />
+        <option value="$PROJECT_DIR$/api/Dockerfile" />
+        <option value="$PROJECT_DIR$/api/irisclassifier/src/models/predict_model.py" />
+        <option value="$PROJECT_DIR$/api/irisclassifier/src/tests/test_predict_model.py" />
+        <option value="$PROJECT_DIR$/api/irisclassifier/requirements.txt" />
+        <option value="$PROJECT_DIR$/nginx/nginx.conf" />
+        <option value="$PROJECT_DIR$/docker-compose.yml" />
+        <option value="$PROJECT_DIR$/nginx/Dockerfile" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="1440" />
-    <option name="width" value="2560" />
-    <option name="height" value="1440" />
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -121,20 +539,13 @@
             <path>
               <item name="irisclassifierAPI" type="b2602c69:ProjectViewProjectNode" />
               <item name="irisclassifierAPI" type="462c0819:PsiDirectoryNode" />
-              <item name="irisclassifier" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="irisclassifierAPI" type="b2602c69:ProjectViewProjectNode" />
               <item name="irisclassifierAPI" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
               <item name="irisclassifier" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="irisclassifierAPI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="irisclassifierAPI" type="462c0819:PsiDirectoryNode" />
-              <item name="irisclassifier" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -145,7 +556,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="PyConsoleConfigurable.Python Console" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -157,6 +568,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/api" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -172,7 +584,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python tests.Unittests in test_predict_model.py">
     <configuration name="test_predict_model" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="irisclassifier" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -190,9 +602,31 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
+    <configuration name="Unittests in test_predict_model.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="irisclassifier" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/api/irisclassifier/src/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/api/irisclassifier/src/tests/test_predict_model.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.test_predict_model" />
+      <item itemvalue="Python tests.Unittests in test_predict_model.py" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Unittests in test_predict_model.py" />
         <item itemvalue="Python.test_predict_model" />
       </list>
     </recent_temporary>
@@ -210,6 +644,20 @@
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="Unittests_in_test_predict_model_py - 2018.10.02 at 15h 41m 49s.xml">
+      <configuration name="Unittests in test_predict_model.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_predict_model_py - 2018.10.02 at 15h 42m 46s.xml">
+      <configuration name="Unittests in test_predict_model.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_predict_model_py - 2018.10.02 at 15h 46m 58s.xml">
+      <configuration name="Unittests in test_predict_model.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_predict_model_py - 2018.10.02 at 15h 49m 28s.xml">
+      <configuration name="Unittests in test_predict_model.py" configurationId="tests" />
+    </history-entry>
+  </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
@@ -220,149 +668,89 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1440" y="0" width="2560" height="1440" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13942496" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32969698" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32967034" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Python Console" order="7" weight="0.32967034" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.1985348" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22692037" />
+      <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.31325302" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49964765" weight="0.21084337" />
+      <window_info anchor="bottom" id="Python Console" order="9" weight="0.32889965" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5003524" side_tool="true" weight="0.21084337" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Data View" order="3" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16067654" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.21084337" />
+      <window_info anchor="bottom" id="Python Console" order="9" weight="0.32889965" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Data View" order="3" />
+    </layout-to-restore>
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.conf" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/irisAPI.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/irisclassifier/src/models/predict_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/irisAPI.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/irisclassifier/src/models/predict_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/irisAPI.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/nameko/cli/run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/irisclassifier/src/models/predict_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/irisclassifier/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/api/irisclassifier/README.md" />
     <entry file="file://$PROJECT_DIR$/services/iris.py" />
     <entry file="file://$PROJECT_DIR$/irisclassifierapi/setup.py" />
     <entry file="file://$PROJECT_DIR$/irisclassifierapi/src/models/predict_model.py" />
     <entry file="file://$PROJECT_DIR$/irisclassifierapi/src/__init__.py" />
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/nameko/cli/run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/irisclassifier/src/models/train_model.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/irisclassifier/README.md">
-      <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/irisclassifier/test_environment.py">
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/nameko/cli/run.py" />
+    <entry file="file://$PROJECT_DIR$/api/irisclassifier/test_environment.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="10" selection-start-column="10" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/irisclassifier/notebooks/Iris Model.ipynb">
+    <entry file="file://$PROJECT_DIR$/api/irisclassifier/notebooks/Iris Model.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
           <selected id="8" />
         </state>
       </provider>
     </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/api/irisAPI.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="33" column="44" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider editor-type-id="text-editor">
-        <state relative-caret-position="95">
+        <state>
           <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
         </state>
       </provider>
@@ -373,57 +761,93 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/json/__init__.py">
+    <entry file="file://$PROJECT_DIR$/api/irisFlask.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="298" column="4" selection-start-line="298" selection-start-column="4" selection-end-line="298" selection-end-column="4" />
+        <state relative-caret-position="437">
+          <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/irisclassifier/requirements.txt">
+    <entry file="file://$PROJECT_DIR$/run_docker.sh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/irisclassifier/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/irisclassifier/src/models/train_model.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/irisclassifier/src/data/make_dataset.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/irisclassifier/setup.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/irisclassifier/src/models/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+        <state relative-caret-position="19">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/irisclassifier/src/models/predict_model.py">
+    <entry file="file://$PROJECT_DIR$/api/irisclassifier/src/tests/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/irisclassifier/src/models/predict_model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="171">
+          <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/irisFlask.py">
+    <entry file="file://$PROJECT_DIR$/api/irisclassifier/src/tests/test_predict_model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="e#0#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/irisclassifier/src/tests/test_predict_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="26" column="44" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
+        <state relative-caret-position="276">
+          <caret line="41" column="32" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/irisAPI.py">
+    <entry file="file://$PROJECT_DIR$/api/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="33" column="44" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="190">
+          <caret line="10" column="58" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/irisclassifier/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nginx/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nginx/nginx.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
