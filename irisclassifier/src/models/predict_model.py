@@ -2,6 +2,7 @@ import numpy
 import pickle
 import os
 from pathlib import Path
+from sklearn.externals import joblib
 
 
 class IrisClassifier:
@@ -22,6 +23,8 @@ class IrisClassifier:
         model = None
         if self.path.exists():
             with open(self.path, 'rb') as file:
-                model = pickle.load(file)
+                #model = pickle.load(file)
+                model = joblib.load(file)
         return model
+
 
